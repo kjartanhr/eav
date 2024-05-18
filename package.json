@@ -20,6 +20,7 @@
     "error-handling"
   ],
   "author": "Kjartan Hrafnkelsson <kjartann@spaugur.com>",
+  "repository": "https://github.com/kjartanhr/eav",
   "license": "MIT",
   "devDependencies": {
     "@swc/core": "^1.5.7",
