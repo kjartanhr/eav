@@ -14,7 +14,7 @@ const { res, err } = await unwrap(async () => {
     throw new Error('Something bad happened.');
 
     // we can pretend this return is sometimes reachable...
-    return {test: 'data');
+    return {test: 'data'};
 });
 
 // handle any errors

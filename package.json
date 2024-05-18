@@ -1,6 +1,6 @@
 {
   "name": "@spaugur/eav",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Simple errors-as-values for TypeScript.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
