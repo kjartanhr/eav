@@ -33,3 +33,5 @@ The above could easily be adapted to deal with the errors that `fetch` might thr
 We use this package internally at [Spaugur](https://spaugur.com/).
 
 You could also totally copy the source code into your own projects. It's tiny!
+
+(c) 2024 Kjartan Hrafnkelsson, under MIT license.
