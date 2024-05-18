@@ -9,23 +9,27 @@ Below is an example:
 ```ts
 import { unwrapAsync as unwrap } from "@spaugur/eav";
 
-(async () => {
-    const { res, err } = await unwrap(async () => {
-        throw new Error('Something bad happened.');
-    });
+// unwrap the value and exception
+const { res, err } = await unwrap(async () => {
+    throw new Error('Something bad happened.');
 
-    if (err || !res) {
-        if (err instanceof Error) {
-            console.log('Error!', err.name, err.message);
-            return;
-        }
+    // we can pretend this return is sometimes reachable...
+    return {test: 'data');
+});
 
-        console.log(err);
+// handle any errors
+if (err || !res) {
+    if (err instanceof Error) {
+        console.log('Error!', err.message);
         return;
     }
 
-    console.log(res.status);
-})();
+    console.log(err);
+    return;
+}
+
+// consume the value
+console.log(res);
 ```
 
 The above could easily be adapted to deal with the errors that `fetch` might throw, something almost every JS/TS developer has to deal with at some point.
